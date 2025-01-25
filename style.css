@@ -71,6 +71,23 @@ header {
     line-height: 24px;
 }
 
+.headerContainer__info ul li{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+@media (min-width:1025px) {
+
+    .headerContainer__info ul li:hover{
+        color: rgb(99, 99, 99);
+        
+    }
+    
+}
+
 .mainContainerInfo__rates ul {
     display: flex;
     flex-direction: column;
@@ -89,6 +106,8 @@ header {
     font-weight: 400;
     line-height: 26.4px;
 }
+
+
 
 .mainContainerInfo__rates ul li span {
     font-family: "Prata";
@@ -119,6 +138,18 @@ header {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+@media (min-width:1025px) {
+
+    .mainContainerInfo__btn button:hover{
+        background-color: rgb(99, 99, 99);
+        transform: scale(1.03);
+        
+    }
+    
 }
 
 .activeContainer {
@@ -177,6 +208,18 @@ header {
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+@media (min-width:1025px) {
+
+    .activeContainerBlock__btn button:hover{
+        background-color: rgb(99, 99, 99);
+        transform: scale(1.03);
+        
+    }
+    
 }
 
 .formContainer {
@@ -350,6 +393,19 @@ footer {
     justify-self: center;
     margin: 0 25px;
 }
+.footerUp__socials img{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width:1025px) {
+
+    .footerUp__socials img:hover{
+        transform: scale(1.2);
+        
+    }
+    
+}
 
 .footerUp__order {
     justify-self: end;
@@ -367,6 +423,17 @@ footer {
     line-height: 30px;
     color: #222222;
     border: none;
+    cursor: pointer;
+}
+
+@media (min-width:1025px) {
+
+    .footerUp__order button:hover{
+        background-color: rgb(99, 99, 99);
+        transform: scale(1.03);
+        
+    }
+    
 }
 
 .footerContainerDown {
@@ -383,8 +450,7 @@ footer {
     width: 35%;
 }
 
-
-.footerPoliceAndTerms{
+.footerPoliceAndTerms {
     display: flex;
     width: 70%;
 }
@@ -393,6 +459,11 @@ footer {
     color: #d5c9be;
     flex: 1;
     text-align: center;
+    
+}
+.footerDown__police p{
+    display: inline-block;
+    cursor: pointer;
 }
 
 .footerDown__terms {
@@ -401,73 +472,70 @@ footer {
 
     text-align: right;
 }
+.footerDown__terms p{
+    display: inline-block;
+    cursor: pointer;
+}
 
-
-@media (max-width:1700px) {
-
-    header{
+@media (max-width: 1700px) {
+    header {
         padding-left: 60px;
     }
 
-
-    .mainContainer__info{
+    .mainContainer__info {
         padding-left: 60px;
         padding-top: 160px;
     }
-    .mainContainer{
+    .mainContainer {
         height: 900px;
     }
 
-    .formContainer{
+    .formContainer {
         margin: 100px 60px;
         padding-left: 70px;
     }
 
-    .formImg__background{
+    .formImg__background {
         width: 60%;
         object-fit: cover;
         border-radius: 30px;
     }
-    .formImg__women{
-        right: 0
+    .formImg__women {
+        right: 0;
     }
-    .footerContainer{
+    .footerContainer {
         padding: 52px 60px;
     }
-
-    
 }
 
-@media (max-width:1440px) {
-     .mainContainerInfo__title{
+@media (max-width: 1440px) {
+    .mainContainerInfo__title {
         font-size: 50px;
         line-height: 50px;
     }
-    .mainContainerInfo__text{
+    .mainContainerInfo__text {
         font-size: 30px;
         line-height: 30px;
     }
 
-    .mainContainerInfo__rates ul li{
+    .mainContainerInfo__rates ul li {
         font-size: 18px;
         line-height: 18px;
     }
-    .mainContainer__image{
+    .mainContainer__image {
         width: 40%;
     }
 
-
-
-    .activeContainer ul li{
+    .activeContainer ul li {
         font-size: 18px;
         line-height: 18px;
     }
-    .activeContainer > img{
+    .activeContainer > img {
         width: 25%;
         flex: none;
     }
-    
-    .formBlock__title{
+
+    .formBlock__title {
         background-color: white;
         border-radius: 30px;
     }
@@ -476,257 +544,208 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
-    
 }
 
-@media (max-width:1100px) {
-    .headerContainer{
+@media (max-width: 1100px) {
+    .headerContainer {
         flex-direction: column;
         gap: 5px;
     }
-    .headerContainer__info ul{
+    .headerContainer__info ul {
         margin-left: 350px;
     }
 
-    header{
+    header {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
-
-    
 }
 
-@media (max-width:1024px) {
-   
-    .mainContainer__image{
+@media (max-width: 1024px) {
+    .mainContainer__image {
         width: 50%;
     }
 
-    .mainContainerInfo__rates ul li span{
+    .mainContainerInfo__rates ul li span {
         font-size: 24px;
-
     }
 
-    .mainContainer{
+    .mainContainer {
         height: 800px;
     }
-    .activeContainer__block{
+    .activeContainer__block {
         padding: 0 25px;
     }
-    .activeContainer > img{
+    .activeContainer > img {
         width: 20%;
     }
 
-    .formContainer{
+    .formContainer {
         padding: 20px;
     }
 
-    .formBlock__title{
+    .formBlock__title {
         font-size: 48px;
         line-height: 48px;
     }
-
-
-
-
-
 }
 
-
-@media (max-width:769px) {
-
-    .mainContainer__info{
+@media (max-width: 769px) {
+    .mainContainer__info {
         padding-top: 130px;
         padding-left: 30px;
     }
-    .mainContainer__info{
+    .mainContainer__info {
         z-index: 10;
     }
 
-    .mainContainer__image{
+    .mainContainer__image {
         position: absolute;
         z-index: 1;
         height: 100%;
-        width: 100% ;
+        width: 100%;
         opacity: 0.3;
         min-height: 730px;
         height: 730px;
-
     }
-    .mainContainer{
+    .mainContainer {
         height: 730px;
     }
 
-    header{
+    header {
         padding: 15px 0;
     }
-    .headerContainer{
+    .headerContainer {
         width: 100%;
     }
-    .headerContainer__info ul{
+    .headerContainer__info ul {
         margin-left: 0;
     }
 
-    .activeContainer ul li{
+    .activeContainer ul li {
         padding: 20px 0;
     }
-    
-    .activeContainer ul li img{
+
+    .activeContainer ul li img {
         height: 25px;
     }
 
-    .activeContainer{
+    .activeContainer {
         margin-top: 50px;
     }
 
-    .formContainer{
+    .formContainer {
         margin: 50px 30px;
         height: 100%;
     }
-    .formImg__women{
+    .formImg__women {
         display: none;
     }
 
-    .formImg__background{
+    .formImg__background {
         width: 100%;
         opacity: 0.5;
     }
-    .formBlock__title{
+    .formBlock__title {
         background-color: transparent;
     }
 
-    .formBlock__title{
+    .formBlock__title {
         font-size: 38px;
         line-height: 38px;
     }
 
-    .formBlock__input input{
+    .formBlock__input input {
         height: 50px;
     }
 
-    .formBlock__input button{
+    .formBlock__input button {
         height: 70px;
     }
-    
-    .footerUp__socials{
+
+    .footerUp__socials {
         gap: 0;
         width: 100%;
         justify-content: space-between;
     }
 
-    .footerUp__order{
+    .footerUp__order {
         display: none;
     }
-    
 
-    
-    .footerContainer{
+    .footerContainer {
         padding: 25px 20px;
     }
-    
 
-    .footerContainerDown{
+    .footerContainerDown {
         flex-direction: column-reverse;
         gap: 10px;
         margin-top: 25px;
     }
 
-    .footerDown__police{
+    .footerDown__police {
         text-align: left;
     }
-    .footerDown__age{
+    .footerDown__age {
         width: 100%;
         text-align: center;
-        
     }
 
-    .footerPoliceAndTerms{
+    .footerPoliceAndTerms {
         width: 100%;
     }
-    
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
 }
-@media (max-width:436px) {
-
-    .mainContainer__info{
+@media (max-width: 436px) {
+    .mainContainer__info {
         padding-left: 15px;
     }
 
-
-    .mainContainerInfo__title{
+    .mainContainerInfo__title {
         font-size: 40px;
         line-height: 40px;
     }
-    .mainContainerInfo__text{
+    .mainContainerInfo__text {
         font-size: 25px;
         line-height: 25px;
     }
 
-    .headerContainer__logo, .footerUp__logo
-    {
+    .headerContainer__logo,
+    .footerUp__logo {
         font-size: 28px;
     }
-    
 
-    
-    .activeContainer__block{
+    .activeContainer__block {
         padding: 0 5px;
     }
 
-    .formBlock__title{
+    .formBlock__title {
         font-size: 28px;
         line-height: 28px;
         margin-bottom: 15px;
     }
-    .formBlock__input input{
+    .formBlock__input input {
         height: 40px;
         font-size: 18px;
         line-height: 18px;
         padding-left: 15px;
     }
-    .checkbox{
+    .checkbox {
         font-size: 16px;
         line-height: 16px;
     }
-    .formBlock__input button{
+    .formBlock__input button {
         font-size: 20px;
     }
 
-
-    .footerContainerDown{
+    .footerContainerDown {
         font-size: 16px;
     }
 
-    
-    .NavContainer ul{
+    .NavContainer ul {
         font-size: 18px;
         gap: 30px;
     }
-    .footerUp__logo{
+    .footerUp__logo {
         text-align: center;
     }
-    
-
-    
-
-
-
-
-    
-
 }
