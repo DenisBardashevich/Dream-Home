@@ -306,7 +306,7 @@ header {
     position: absolute;
     bottom: 0;
     right: 100px;
-    z-index: 23;
+    z-index: 13;
 }
 
 .NavContainer {
@@ -403,6 +403,21 @@ footer {
     .mainContainer{
         height: 900px;
     }
+
+    .formContainer{
+        margin: 100px 60px;
+        padding-left: 70px;
+    }
+
+    .formImg__background{
+        width: 60%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .formImg__women{
+        right: 0
+    }
+
     
 }
 
@@ -433,6 +448,11 @@ footer {
     .activeContainer > img{
         width: 25%;
         flex: none;
+    }
+    
+    .formBlock__title{
+        background-color: white;
+        border-radius: 30px;
     }
     
     
@@ -476,6 +496,17 @@ footer {
     .activeContainer > img{
         width: 20%;
     }
+
+    .formContainer{
+        padding: 20px;
+    }
+
+    .formBlock__title{
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+
 
 
 
@@ -524,6 +555,40 @@ footer {
         height: 25px;
     }
 
+    .activeContainer{
+        margin-top: 50px;
+    }
+
+    .formContainer{
+        margin: 50px 30px;
+        height: 100%;
+    }
+    .formImg__women{
+        display: none;
+    }
+
+    .formImg__background{
+        width: 100%;
+        opacity: 0.5;
+    }
+    .formBlock__title{
+        background-color: transparent;
+    }
+
+    .formBlock__title{
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .formBlock__input input{
+        height: 50px;
+    }
+
+    .formBlock__input button{
+        height: 70px;
+    }
+
+
 
 
 
@@ -549,13 +614,32 @@ footer {
         font-size: 28px;
     }
     
-    .activeContainer{
-        margin-top: 50px;
-    }
+
     
     .activeContainer__block{
         padding: 0 5px;
     }
+
+    .formBlock__title{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .formBlock__input input{
+        height: 40px;
+        font-size: 18px;
+        line-height: 18px;
+        padding-left: 15px;
+    }
+    .checkbox{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .formBlock__input button{
+        font-size: 20px;
+    }
+    
+    
 
 
 
