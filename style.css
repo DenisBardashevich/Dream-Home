@@ -1,7 +1,5 @@
 @import url(./index.css);
 
-
-
 header {
     position: fixed;
     width: 100%;
@@ -10,6 +8,7 @@ header {
     padding-left: 183px;
     background-color: #222222;
     z-index: 50;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Плавный переход */
 }
 .headerContainer {
     display: flex;
@@ -275,56 +274,13 @@ header {
     align-items: center;
     height: 26px;
     margin: 26px 0;
-
-    position: relative;
-}
-.checkbox input[type="checkbox"] {
-    display: none;
-}
-
-.checkbox label {
-    display: flex;
-    align-items: center;
-    position: relative;
     cursor: pointer;
 }
 
-.checkbox label::before {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #405d65;
-    border-radius: 4px;
-    margin-right: 16px;
-    transition: background 0.3s;
-}
-
-.checkbox input[type="checkbox"]:checked + label::before {
-    background: #405d65;
-}
-
-.checkbox input[type="checkbox"]:checked + label::after {
-    content: "✔";
-    position: absolute;
-    left: 6px;
-    top: 2px;
-    color: white;
-    font-size: 20px;
-}
-
-.error-message {
-    position: absolute;
-    display: none;
-    bottom: 30px;
-    color: red;
-    border: 1px solid rgba(0, 0, 0, 0.664);
-    padding-left: 5px;
-    background-color: rgba(99, 99, 99, 0.449);
-    font-size: 14px;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
+.checkbox input {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
 }
 
 .formBlock__input button {
@@ -341,14 +297,11 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
-
 @media (min-width: 1025px) {
     .formBlock__input button:hover {
         background-color: rgb(99, 99, 99);
     }
 }
-
-
 
 .formImg__background {
     height: 100%;
@@ -387,8 +340,7 @@ header {
     line-height: 30px;
 }
 
-
-.NavContainer ul li a{
+.NavContainer ul li a {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -490,19 +442,17 @@ footer {
     flex: 1;
 
     text-align: right;
-    
 }
 .footerDown__terms p {
     display: inline-block;
     cursor: pointer;
     text-decoration: underline;
-
 }
 
 @media (min-width: 1025px) {
-    .footerDown__terms p :hover, .footerDown__police p :hover {
+    .footerDown__terms p :hover,
+    .footerDown__police p :hover {
         color: rgb(157, 157, 157);
-        
     }
 }
 
@@ -742,9 +692,19 @@ footer {
     .footerUp__logo {
         font-size: 28px;
     }
+    
+    .activeContainer{
+        height: 100%;
+    }
 
     .activeContainer__block {
-        padding: 0 5px;
+        padding: 0 15px;
+    }
+    .activeContainer > img{
+        display: none;
+    }
+    .activeContainerBlock__btn button{
+        margin-top: 50px;
     }
 
     .formBlock__title {
