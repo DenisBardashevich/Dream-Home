@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
         <title>Test Company MST</title>
     </head>
     <body>
@@ -12,16 +13,16 @@
                 <div class="headerContainer__logo">Construction Company</div>
                 <nav class="headerContainer__info">
                     <ul>
-                        <li>Rates</li>
-                        <li>Advantages</li>
-                        <li>Order</li>
+                        <li><a href="#Rates">Rates</a></li>
+                        <li><a href="#Advantages">Advantages</a></li>
+                        <li><a href="#Order">Order</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
             <div class="mainContainer">
-                <div class="mainContainer__info">
+                <div class="mainContainer__info" id="Rates">
                     <div class="mainContainerInfo__title">
                         Create Your Dream Home with Us
                     </div>
@@ -52,7 +53,7 @@
                     <img src="./public/BarnHouse1.jpg" alt="BarnHouse" />
                 </div>
             </div>
-            <div class="activeContainer">
+            <div class="activeContainer" id="Advantages">
                 <img src="./public/BarnHouse3.jpg" alt="BarnHouse" />
                 <div class="activeContainer__block">
                     <ul>
@@ -91,14 +92,14 @@
                 </div>
                 <img src="./public/TaunHouse2.jpg" alt="BarnHouse" />
             </div>
-            <div class="formContainer">
+            <div class="formContainer" id="Order">
                 <div class="formContainerBlock__text">
                     <div class="formBlock__title">
                         Order your consultation and start your path to a new
                         home!
                     </div>
 
-                    <form class="formBlock__input" action="#" method="post">
+                    <form class="formBlock__input" action="#" method="post" id="myForm">
                         <div class="input-group">
                             <input
                                 type="text"
@@ -127,6 +128,7 @@
                             <label for="checkbox"
                                 >I accept Privacy policy</label
                             >
+                            <div class="error-message" id="checkboxError"></div>
                         </div>
 
                         <button type="submit">SUBMIT FORM</button>
@@ -150,9 +152,9 @@
             <div class="footerNav">
                 <nav class="NavContainer">
                     <ul>
-                        <li>Rates</li>
-                        <li>Advantages</li>
-                        <li>Order</li>
+                        <li><a href="#Rates">Rates</a></li>
+                        <li><a href="#Advantages">Advantages</a></li>
+                        <li><a href="#Order">Order</a></li>
                     </ul>
                 </nav>
             </div>
@@ -187,8 +189,8 @@
                     <div class="footerDown__age">© 2024, Copyright.</div>
                     <div class="footerPoliceAndTerms">
 
-                        <div class="footerDown__police"><p>Privacy policy</p></div>
-                        <div class="footerDown__terms"><p>Terms of Use</p></div>
+                        <div class="footerDown__police"><p><a href="#">Privacy policy</a></p></div>
+                        <div class="footerDown__terms"><p><a href="#">Terms of Use</a></p></div>
                     </div>
                 </div>
             </div>

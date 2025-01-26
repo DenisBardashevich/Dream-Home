@@ -14,6 +14,11 @@ body {
 
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
     background-color: black;
@@ -26,4 +31,13 @@ body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background-color: #3e3e3e;
+}
+
+
+#Order, #Advantages {
+    scroll-margin-top: 180px;
+}
+
+html {
+    scroll-behavior: smooth;
 }

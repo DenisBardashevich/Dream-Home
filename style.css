@@ -1,5 +1,7 @@
 @import url(./index.css);
 
+
+
 header {
     position: fixed;
     width: 100%;
@@ -71,21 +73,15 @@ header {
     line-height: 24px;
 }
 
-.headerContainer__info ul li{
+.headerContainer__info ul li {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
 }
 
-
-
-@media (min-width:1025px) {
-
-    .headerContainer__info ul li:hover{
+@media (min-width: 1025px) {
+    .headerContainer__info ul li a:hover {
         color: rgb(99, 99, 99);
-        
     }
-    
 }
 
 .mainContainerInfo__rates ul {
@@ -106,8 +102,6 @@ header {
     font-weight: 400;
     line-height: 26.4px;
 }
-
-
 
 .mainContainerInfo__rates ul li span {
     font-family: "Prata";
@@ -142,14 +136,11 @@ header {
     cursor: pointer;
 }
 
-@media (min-width:1025px) {
-
-    .mainContainerInfo__btn button:hover{
+@media (min-width: 1025px) {
+    .mainContainerInfo__btn button:hover {
         background-color: rgb(99, 99, 99);
         transform: scale(1.03);
-        
     }
-    
 }
 
 .activeContainer {
@@ -212,14 +203,11 @@ header {
     transition: all 0.1s ease-in-out;
 }
 
-@media (min-width:1025px) {
-
-    .activeContainerBlock__btn button:hover{
+@media (min-width: 1025px) {
+    .activeContainerBlock__btn button:hover {
         background-color: rgb(99, 99, 99);
         transform: scale(1.03);
-        
     }
-    
 }
 
 .formContainer {
@@ -325,6 +313,20 @@ header {
     font-size: 20px;
 }
 
+.error-message {
+    position: absolute;
+    display: none;
+    bottom: 30px;
+    color: red;
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    padding-left: 5px;
+    background-color: rgba(99, 99, 99, 0.449);
+    font-size: 14px;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+}
+
 .formBlock__input button {
     height: 100px;
     background-color: #282829;
@@ -335,7 +337,18 @@ header {
     border: none;
 
     color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
+
+@media (min-width: 1025px) {
+    .formBlock__input button:hover {
+        background-color: rgb(99, 99, 99);
+    }
+}
+
+
 
 .formImg__background {
     height: 100%;
@@ -374,6 +387,18 @@ header {
     line-height: 30px;
 }
 
+
+.NavContainer ul li a{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+    .NavContainer ul li a:hover {
+        color: rgb(99, 99, 99);
+    }
+}
+
 footer {
     background-color: #222222;
 }
@@ -393,18 +418,15 @@ footer {
     justify-self: center;
     margin: 0 25px;
 }
-.footerUp__socials img{
+.footerUp__socials img {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-@media (min-width:1025px) {
-
-    .footerUp__socials img:hover{
+@media (min-width: 1025px) {
+    .footerUp__socials img:hover {
         transform: scale(1.2);
-        
     }
-    
 }
 
 .footerUp__order {
@@ -426,14 +448,11 @@ footer {
     cursor: pointer;
 }
 
-@media (min-width:1025px) {
-
-    .footerUp__order button:hover{
+@media (min-width: 1025px) {
+    .footerUp__order button:hover {
         background-color: rgb(99, 99, 99);
         transform: scale(1.03);
-        
     }
-    
 }
 
 .footerContainerDown {
@@ -459,11 +478,11 @@ footer {
     color: #d5c9be;
     flex: 1;
     text-align: center;
-    
 }
-.footerDown__police p{
+.footerDown__police p {
     display: inline-block;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .footerDown__terms {
@@ -471,10 +490,20 @@ footer {
     flex: 1;
 
     text-align: right;
+    
 }
-.footerDown__terms p{
+.footerDown__terms p {
     display: inline-block;
     cursor: pointer;
+    text-decoration: underline;
+
+}
+
+@media (min-width: 1025px) {
+    .footerDown__terms p :hover, .footerDown__police p :hover {
+        color: rgb(157, 157, 157);
+        
+    }
 }
 
 @media (max-width: 1700px) {
